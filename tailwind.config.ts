@@ -8,12 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
     },
+    screens: {
+      xl: { max: '1392px' },
+      lg: { max: '1200px' },
+      md: { max: '1000px' },
+      sm: { max: '767px' },
+      sx: { max: '540px' },
+  },
   },
   plugins: [],
 }
